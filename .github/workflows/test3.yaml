@@ -1,0 +1,14 @@
+name: file operations in github
+
+on: push
+
+jobs:
+    files:
+        runs-on: unbuntu-latest
+        steps:
+            - name: create a file
+             run: echo "Mani devops ..." > devops.txt
+            - name: display the content of a file
+             run: cat devops.txt
+            - name: display the fies and dir
+             run: ls -lrth
