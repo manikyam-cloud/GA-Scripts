@@ -1,0 +1,18 @@
+name: Execute Shell Script
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-script-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Give execute permission to script
+        run: chmod +x myscript.sh
+
+      - name: Run the shell script
+        run: ./myscript.sh
