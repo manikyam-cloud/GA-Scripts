@@ -5,7 +5,7 @@ on: push
 jobs:
     files:
         runs-on: unbuntu-latest
-        steps:
+     steps:
             - name: create a file
              run: echo "Mani devops ..." > devops.txt
             - name: display the content of a file
