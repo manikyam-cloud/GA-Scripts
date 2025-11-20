@@ -17,4 +17,4 @@ jobs:
          - name: system info
            run: uname  
          - name: calender month
-           run: cal  
+           run: ls -lrth | grep -i "devops"  
