@@ -17,4 +17,4 @@ jobs:
          - name: system info
            run: uname  
          - name: calender month
-           run: cat cal  
+           run: cal  
