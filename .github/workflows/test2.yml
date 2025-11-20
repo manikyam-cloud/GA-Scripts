@@ -1,13 +1,31 @@
-name: Testing workflow
-on : push
-jobs:
-    test-job:
-        runs-on: ubuntu:latest
-        steps:
-            - name: Hello display
-              run: echo "Hello Mani Devops"
-            - name: Display the date
-             run: date
-            - name: Display current directory
-             run: pwd
+# name: Testing workflow
+# on : push
+# jobs:
+#     test-job:
+#         runs-on: ubuntu:latest
+#         steps:
+#             - name: Hello display
+#               run: echo "Hello Mani Devops"
+#             - name: Display the date
+#              run: date
+#             - name: Display current directory
+#              run: pwd
                
+name: Testing workflow
+
+on: push
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello display
+        run: echo "Hello Mani Devops"
+
+      - name: Display the date
+        run: date
+
+      - name: Display current directory
+        run: pwd
+
