@@ -1,0 +1,13 @@
+name: Strings ops
+
+on: workflow_dispatch
+
+jobs:
+  strings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Convert to uppercase
+        run: echo "kk funda" | tr 'a-z' 'A-Z'
+
+      - name: Word count
+        run: echo "GitHub Actions Training" | wc -w
