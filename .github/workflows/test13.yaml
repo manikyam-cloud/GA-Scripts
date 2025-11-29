@@ -1,0 +1,16 @@
+name: Step Timeout Example
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: This step has timeout
+        timeout-minutes: 1
+        run: sleep 90
+
+      - name: This step runs normally
+        run: echo "Next step running"
