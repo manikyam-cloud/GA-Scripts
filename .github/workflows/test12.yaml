@@ -14,4 +14,4 @@ jobs:
     steps:
       - run: echo "Running workflow"
       - run: sleep 30
-      - run: echo "Finished ok"
+      - run: echo "Finished"
